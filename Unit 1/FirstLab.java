@@ -17,7 +17,7 @@ public class FirstLab
 		System.out.println("<*******************>");
 		System.out.println("|    \"Zhuo Chen\"    |");
 		System.out.println("<*******************>");
-		System.out.println("|  4017 Bashful Dr. |");
+		System.out.println("|  PLANO WEST HIGH  |");
 		System.out.println("<*******************>");
 		System.out.println("|  Plano, TX 75093  |");
 		System.out.println("<*******************>");
