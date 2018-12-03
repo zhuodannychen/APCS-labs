@@ -53,7 +53,7 @@ public class SportsReport
 	@Override
 	public String toString()
 	{
-    String finall = String.format("%-25s%4d, %-25s%4d", winner, winningScore, loser, losingScore);
+    		String finall = String.format("%-25s%4d, %-25s%4d", winner, winningScore, loser, losingScore);
 		return finall;
 	}
 	
@@ -62,15 +62,15 @@ public class SportsReport
 	{
 		int indexOfBeat = -1;
 		int indexOfBy = -1;
-    int indexOfOff = -1;
-    int indexOfTo = -1;
+    		int indexOfOff = -1;
+    		int indexOfTo = -1;
 
 		for(int i = 0; i < score.length() - 1; i++)
 		{
 			if(score.substring(i, i + 6).equals(" beat "))
 			{
 				indexOfBeat = i;
-        winner = score.substring(0, i + 1).trim();
+      				winner = score.substring(0, i + 1).trim();
 				break;
 			}
 		}
@@ -81,34 +81,34 @@ public class SportsReport
 			if(score.substring(j, j + 4).equals(" by "))
 			{
 				indexOfBy = j;
-        loser = score.substring(indexOfBeat + 6, indexOfBy);
-        break;
+        			loser = score.substring(indexOfBeat + 6, indexOfBy);
+        			break;
 			}			
 		}
 
-    for(int i = indexOfBy; i < score.length() - 1; i++)
+    		for(int i = indexOfBy; i < score.length() - 1; i++)
 		{
 			
 			if(score.substring(i, i + 4).equals(" of "))
 			{
 				indexOfOff = i;
-        break;
+       				break;
 			}			
 		}
 
-    for(int j = indexOfOff; j < score.length() - 1; j++)
+    		for(int j = indexOfOff; j < score.length() - 1; j++)
 		{
 			
 			if(score.substring(j, j + 4).equals(" to "))
 			{
 				indexOfTo = j;
-        String stringWinScore = score.substring(indexOfOff + 3, indexOfTo).trim();
-        winningScore = Integer.parseInt(stringWinScore);
-        break;
+        			String stringWinScore = score.substring(indexOfOff + 3, indexOfTo).trim();
+        			winningScore = Integer.parseInt(stringWinScore);
+        			break;
 			}			
 		}		
     
-    String stringloseScore = score.substring(indexOfTo + 3, score.length()).trim();
+    		String stringloseScore = score.substring(indexOfTo + 3, score.length()).trim();
 		losingScore = Integer.parseInt(stringloseScore);
 	}
 }
