@@ -79,7 +79,7 @@ public class SportsReport
   public String toString()
   {
   	//formats the string
-  	String finall = String.format("%-25s%4d, %-25s%4d", winner, winningScore, loser, losingScore);
+    String finall = String.format("%-25s%4d, %-25s%4d", winner, winningScore, loser, losingScore);
     return finall;
   }
   
@@ -92,7 +92,7 @@ public class SportsReport
   {
     int indexOfBeat = -1;
     int indexOfBy = -1;
-  	int indexOfOff = -1;
+  	 int indexOfOff = -1;
    	int indexOfTo = -1;
 
     for(int i = 0; i < score.length() - 1; i++)
@@ -100,7 +100,7 @@ public class SportsReport
       if(score.substring(i, i + 6).equals(BEAT))
       {
         indexOfBeat = i;
-      	winner = score.substring(0, i + 1).trim();
+       	winner = score.substring(0, i + 1).trim();
         break;
       }
     }
@@ -128,7 +128,7 @@ public class SportsReport
    {
       if(score.substring(j, j + 4).equals(TO))
       {
-      	indexOfTo = j;
+      	 indexOfTo = j;
        	String stringWinScore = score.substring(indexOfOff + 3, indexOfTo).trim();
        	winningScore = Integer.parseInt(stringWinScore);
        	break;
