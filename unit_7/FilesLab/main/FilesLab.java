@@ -12,14 +12,14 @@ public class Main
     try
     {
       // run 70-point version
-      //processIntegers("test1.txt", "output1.txt");
+      processIntegers("test1.txt", "output1.txt");
       System.out.println();
       
       // run 85-point version
-      //testLines("test2a.txt", "output2a.txt");
+      testLines("test2a.txt", "output2a.txt");
       
       // run 85-point version
-      //testLines("test2b.txt", "output2b.txt");
+      testLines("test2b.txt", "output2b.txt");
       System.out.println();
       
       // run 100-point version - good data
