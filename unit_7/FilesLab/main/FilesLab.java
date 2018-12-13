@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 import java.io.*;
 
-public class Main
+public class FilesLab
 {
   static String fileName = "";
   public static void main(String[] args)
