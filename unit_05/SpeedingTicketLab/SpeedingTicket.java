@@ -1,4 +1,4 @@
-p/** 
+/** 
  *This is a speeding ticket calculator to see how much you would have to pay if you
  *overspeed. There are different values for both in school zone and out, and if you
  *speed over 30 miles per hour, there is an extra $175.
